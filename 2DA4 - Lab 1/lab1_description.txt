@@ -1,5 +1,12 @@
 Logic designed following these requirements:
 
-You are to design two functions, f1 and f2, with four inputs named x1, x0, y1, and y0. Consider X = x1 x0 to be a number. The four possible patterns of x1 x0, namely 00, 01, 10, and 11 represent the four numbers 0, 1, 2, and 3, respectively. Similarly, consider Y =y1 y0 to be another number with the same four possible values. The function f1 should be 1 when the two numbers represented by X and Y are NOT equal (i.e. X != Y). Otherwise, f1 should be 0. The function f2 should be 1 when the number represented by X is greater than or equal to the number represented by Y (i.e. X ≥ Y), otherwise f2 should be 0.
+You are to design two functions, f1 and f2, with four inputs named x1, x0, y1, and y0. Consider X = x1 x0 
+to be a number. The four possible patterns of x1 x0, namely 00, 01, 10, and 11 represent the four 
+numbers 0, 1, 2, and 3, respectively. Similarly, consider Y =y1 y0 to be another number with the same 
+four possible values. The function f1 should be 1 when the two numbers represented by X and Y are NOT 
+equal (i.e. X != Y). Otherwise, f1 should be 0. The function f2 should be 1 when the number represented 
+by X is greater than or equal to the number represented by Y (i.e. X ≥ Y), otherwise f2 should be 0.
 
-b) For the Verilog code dual2.v connect the inputs x1, xo and yl, yo to toggle switches SW[9], SW[8], SW[7], and SW[6], respectively. Connect fl to the red LED labelled LEDR[9] and connect 12 to the red LED labelled LEDR[8]. 
+b) For the Verilog code dual2.v connect the inputs x1, xo and yl, yo to toggle switches SW[9], 
+SW[8], SW[7], and SW[6], respectively. Connect fl to the red LED labelled LEDR[9] and connect 12 
+to the red LED labelled LEDR[8]. 
