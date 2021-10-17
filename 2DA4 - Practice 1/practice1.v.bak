@@ -1,0 +1,8 @@
+
+
+module tut1(CLOCK_50);
+
+    input wire hello
+
+endmodule
+
