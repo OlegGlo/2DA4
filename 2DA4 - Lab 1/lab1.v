@@ -29,13 +29,12 @@ endmodule
 
 //updated version
 
-/*
 
-module dual2(SW[9], SW[8], SW[7], SW[6], LEDR[8], LEDR[9]);
+module dual2(SW, LEDR);
 
 // ===== Input/Output Declarations ===== //
-	input SW[9], SW[8], SW[7], SW[6];
-	output LEDR[8],LEDR[9];
+	input wire [9:6]SW;
+	output wire [9:8]LEDR;
 
 // ===== Net/Reg Declarations ===== //
    //reg [9:8]LEDR;
@@ -45,7 +44,7 @@ module dual2(SW[9], SW[8], SW[7], SW[6], LEDR[8], LEDR[9]);
 				(~SW[8] &  SW[6]) |
 				( SW[9] & ~SW[7]) |
 				( SW[8] & ~SW[6]) ;
-
+				
 	assign LEDR[8] = (~SW[9] & ~SW[8] & ~SW[7] & ~SW[6]) |
 				(~SW[9] &  SW[8] & ~SW[7] & ~SW[6]) |
 				(~SW[9] &  SW[8] & ~SW[7] &  SW[6]) |
@@ -56,24 +55,6 @@ module dual2(SW[9], SW[8], SW[7], SW[6], LEDR[8], LEDR[9]);
 				( SW[9] &  SW[8] & ~SW[7] &  SW[6]) |
 				( SW[9] &  SW[8] &  SW[7] & ~SW[6]) |
 				( SW[9] &  SW[8] &  SW[7] &  SW[6]) ;
-endmodule
-
-*/
-
-module dual2(SW[9], SW[8], SW[7], SW[6], LEDR[9]);
-
-// ===== Input/Output Declarations ===== //
-	input SW[9], SW[8], SW[7], SW[6];
-	output LEDR[9];
-
-// ===== Net/Reg Declarations ===== //
-   //reg [9:8]LEDR;
-
-// ===== Logic ===== //
-	assign LEDR[9] = (~SW[9] &  SW[7]) |
-				(~SW[8] &  SW[6]) |
-				( SW[9] & ~SW[7]) |
-				( SW[8] & ~SW[6]) ;
 
 endmodule
 
