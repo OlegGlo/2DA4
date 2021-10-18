@@ -1,4 +1,4 @@
-Fitter Status : Successful - Sun Oct 17 20:17:41 2021
+Fitter Status : Successful - Sun Oct 17 22:00:37 2021
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 Revision Name : lab2part4
 Top-level Entity Name : part4
@@ -6,7 +6,7 @@ Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
 Logic utilization (in ALMs) : 2 / 32,070 ( < 1 % )
-Total registers : 5
+Total registers : 6
 Total pins : 11 / 457 ( 2 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 4,065,280 ( 0 % )

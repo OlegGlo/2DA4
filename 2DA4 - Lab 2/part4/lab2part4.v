@@ -16,14 +16,19 @@ module part4(SW, KEY, LEDR, HEX5);
 	
 // == Logic ==
 
-	always @(posedge KEY[0]) begin
-		if (KEY[1] == 1'b0)//reset key
-			LEDR[9] <= 1'b0;
+	always @(posedge KEY[0]) 
+	begin
+		if (~KEY[1])//reset key
+		begin
+			LEDR[9] = 1'b1;
+			HEX5 = 0; //Doesnt work ????
+		end
 		else
-			LEDR[9] = SW[9];
+			LEDR[9] <= SW[9];
 			if(SW[9] == 1'b0)
-				HEX5 <= {7'b1000000};
+				HEX5[5:0] <= {6'b000000};// or can do the method below
 			else
-				HEX5 <= {7'b1111001};//Make display show "1", can also do
+				HEX5 <= {7'b1111001};//Make display show "1"
 	end
+	
 endmodule 
