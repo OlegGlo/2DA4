@@ -21,6 +21,7 @@ module part4(SW, KEY, LEDR, HEX5);
 		if (~KEY[1])//reset key
 		begin
 			LEDR[9] = 1'b1;
+			
 			HEX5 = 0; //Doesnt work ????
 		end
 		else
