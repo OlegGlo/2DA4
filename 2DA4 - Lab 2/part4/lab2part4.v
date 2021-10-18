@@ -20,9 +20,8 @@ module part4(SW, KEY, LEDR, HEX5);
 	begin
 		if (~KEY[1])//reset key
 		begin
-			LEDR[9] = 1'b1;
-			
-			HEX5 = 0; //Doesnt work ????
+			LEDR[9] = 1'b0;
+			HEX5 = {7'b1111111}; //Doesnt work ????
 		end
 		else
 			LEDR[9] <= SW[9];
