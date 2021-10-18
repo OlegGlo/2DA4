@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for lab2part3
-Sun Oct 17 22:20:02 2021
+Mon Oct 18 07:12:53 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -97,12 +97,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 1.03        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.0%      ;
+;     Processor 2            ;   3.3%      ;
 +----------------------------+-------------+
 
 
@@ -311,13 +311,13 @@ No synchronizer chains to report.
 +-------+--------------+-----------------+-----------------+
 ; Pin   ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
 +-------+--------------+-----------------+-----------------+
-; SW[5] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SW[6] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[2] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[3] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[1] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[4] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[7] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[6] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SW[5] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[9] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[8] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 +-------+--------------+-----------------+-----------------+
@@ -452,7 +452,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; SW[2]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[3]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[4]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[6]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[5]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[7]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[8]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[9]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -488,7 +488,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; SW[2]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[3]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[4]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[6]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[5]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[7]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[8]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[9]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -521,7 +521,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Sun Oct 17 22:19:56 2021
+    Info: Processing started: Mon Oct 18 07:12:46 2021
 Info: Command: quartus_sta lab2part3 -c lab2part3
 Info: qsta_default_script.tcl version: #3
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
@@ -1153,9 +1153,9 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 578 warnings
-    Info: Peak virtual memory: 5081 megabytes
-    Info: Processing ended: Sun Oct 17 22:20:02 2021
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Peak virtual memory: 5080 megabytes
+    Info: Processing ended: Mon Oct 18 07:12:53 2021
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:07
 
 

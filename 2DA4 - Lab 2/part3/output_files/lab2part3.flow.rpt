@@ -1,5 +1,5 @@
 Flow report for lab2part3
-Sun Oct 17 22:20:02 2021
+Mon Oct 18 07:12:53 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Sun Oct 17 22:19:55 2021           ;
+; Flow Status                     ; Successful - Mon Oct 18 07:12:45 2021           ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                   ; lab2part3                                       ;
 ; Top-level Entity Name           ; part3                                           ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/17/2021 22:18:47 ;
+; Start date & time ; 10/18/2021 07:11:36 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab2part3           ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 24062491136.163453432609976            ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 192123324167383.163456629506184        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; part3       ; Top        ;
@@ -96,11 +96,11 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:16     ; 1.0                     ; 4798 MB             ; 00:00:36                           ;
-; Fitter                    ; 00:00:42     ; 1.0                     ; 6261 MB             ; 00:01:04                           ;
-; Assembler                 ; 00:00:09     ; 1.0                     ; 4829 MB             ; 00:00:08                           ;
-; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 5081 MB             ; 00:00:06                           ;
-; Total                     ; 00:01:13     ; --                      ; --                  ; 00:01:54                           ;
+; Analysis & Synthesis      ; 00:00:15     ; 1.0                     ; 4798 MB             ; 00:00:36                           ;
+; Fitter                    ; 00:00:42     ; 1.0                     ; 6262 MB             ; 00:01:03                           ;
+; Assembler                 ; 00:00:10     ; 1.0                     ; 4825 MB             ; 00:00:10                           ;
+; TimeQuest Timing Analyzer ; 00:00:07     ; 1.0                     ; 5080 MB             ; 00:00:07                           ;
+; Total                     ; 00:01:14     ; --                      ; --                  ; 00:01:56                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

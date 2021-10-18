@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab2part3
-Sun Oct 17 22:19:02 2021
+Mon Oct 18 07:11:51 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Oct 17 22:19:02 2021           ;
+; Analysis & Synthesis Status     ; Successful - Mon Oct 18 07:11:50 2021           ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                   ; lab2part3                                       ;
 ; Top-level Entity Name           ; part3                                           ;
@@ -258,7 +258,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Sun Oct 17 22:18:46 2021
+    Info: Processing started: Mon Oct 18 07:11:35 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab2part3 -c lab2part3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -844,14 +844,14 @@ Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 2/part3/lab2part3.v Line: 101
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 2/part3/lab2part3.v Line: 101
 Info (21057): Implemented 35 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 14 output pins
     Info (21061): Implemented 12 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 578 warnings
-    Info: Peak virtual memory: 4807 megabytes
-    Info: Processing ended: Sun Oct 17 22:19:02 2021
+    Info: Peak virtual memory: 4811 megabytes
+    Info: Processing ended: Mon Oct 18 07:11:51 2021
     Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:36
 

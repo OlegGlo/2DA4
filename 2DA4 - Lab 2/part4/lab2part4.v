@@ -20,8 +20,9 @@ module part4(SW, KEY, LEDR, HEX5);
 	begin
 		if (~KEY[1])//reset key
 		begin
-			LEDR[9] = 1'b0;
-			HEX5 <= {7'b1111111}; //Doesnt work ???? 
+			HEX5 = {7'b1010101};
+			LEDR[9] <= 1'b0;
+			//HEX5 <= {7'b1010101}; //Doesnt work ???? 
 		end
 		else
 			LEDR[9] <= SW[9];
@@ -29,6 +30,5 @@ module part4(SW, KEY, LEDR, HEX5);
 				HEX5[5:0] <= {6'b000000};// or can do the method below
 			else
 				HEX5 <= {7'b1111001};//Make display show "1"
-	end
-	
+	end 
 endmodule 
