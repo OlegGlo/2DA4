@@ -1,31 +1,29 @@
-module part4(Q, SW, KEY);
+module part4(SW, KEY, LEDR, HEX5);
 
 // == Input and Output ==
 
 	
-	input [0:0] KEY;
+	input [1:0] KEY;
 	input [9:9] SW;
 
-	output Q;
-	output wire HEX5[6:0];
+	output [6:0]HEX5;
+	output [9:9]LEDR;
 	
 // == Net/Reg ==
 
-	reg Q;
+	reg [9:9]LEDR;
+	reg [6:0]HEX5;
 	
 // == Logic ==
-	
-	always @(posedge KEY)
-		if (~KEY)
-			Q <= SW[9];
-			if(Q == 0)
-				HEX5[5:0] <= {6[1'b0]}
-			else
-				HEX5[2:1] <= {2[1'b1]}
-		else
-			if(Q == 0)
-				HEX5[5:0] <= {6[1'b0]}
-			else
-				HEX5[2:1] <= {2[1'b1]}
 
+	always @(posedge KEY[0]) begin
+		if (KEY[1] == 1'b0)//reset key
+			LEDR[9] <= 1'b1;
+		else
+			LEDR[9] = SW[9];
+			if(SW[9] == 1'b0)
+				HEX5 <= {7'b1000000};
+			else
+				HEX5 <= {7'b1111001};//Make display show "1", can also do
+	end
 endmodule 
