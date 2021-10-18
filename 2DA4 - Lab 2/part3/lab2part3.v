@@ -86,7 +86,7 @@ module part3(SW, HEX4, HEX5);
 // ===== Input/Output Declarations ===== //
 
     //Part 1
-    //input SW[9], SW[8], SW[7], SW[6];
+    //input SW[9], SW[8], SW[7], SW[5];
     //input wire [9:6]SW; 
 	 //output HEX5[0], HEX5[1], HEX5[2], HEX5[3], HEX5[4], HEX5[5], HEX5[6];
     output wire [6:0]HEX5;
@@ -103,41 +103,41 @@ module part3(SW, HEX4, HEX5);
 // ===== Logic ===== //
 
    //part 1
-   assign HEX5[0] = (!SW[9] & !SW[8] & !SW[7] &  SW[6]) |  
-					(!SW[9] &  SW[8] & !SW[7] & !SW[6]) |  
-					( SW[9] &  SW[8] & !SW[7] &  SW[6]) |  
-					( SW[9] & !SW[8] &  SW[7] &  SW[6]) ;
+   assign HEX5[0] = (!SW[9] & !SW[8] & !SW[7] &  SW[5]) |  
+					(!SW[9] &  SW[8] & !SW[7] & !SW[5]) |  
+					( SW[9] &  SW[8] & !SW[7] &  SW[5]) |  
+					( SW[9] & !SW[8] &  SW[7] &  SW[5]) ;
 	
-	assign HEX5[1] = (!SW[9] &  SW[8] & !SW[7] &  SW[6]) |  
-					(    &  SW[8] &  SW[7] & !SW[6]) |  
-					( SW[9] &  SW[8] &       !SW[6]) |  
-					( SW[9] &        SW[7] &  SW[6]) ;
+	assign HEX5[1] = (!SW[9] &  SW[8] & !SW[7] &  SW[5]) |  
+					(    &  SW[8] &  SW[7] & !SW[5]) |  
+					( SW[9] &  SW[8] &       !SW[5]) |  
+					( SW[9] &        SW[7] &  SW[5]) ;
 	
-	assign HEX5[2] = (!SW[9] & !SW[8] &  SW[7] & !SW[6]) |  
-					( SW[9] &  SW[8] &       !SW[6]) |  
+	assign HEX5[2] = (!SW[9] & !SW[8] &  SW[7] & !SW[5]) |  
+					( SW[9] &  SW[8] &       !SW[5]) |  
 					( SW[9] &  SW[8] &  SW[7]      ) ;
 	
-	assign HEX5[3] = (!SW[9] & !SW[8] & !SW[7] &  SW[6]) |  
-					(!SW[9] &  SW[8] & !SW[7] & !SW[6]) |  
-					(       SW[8] &  SW[7] &  SW[6]) |  
-					( SW[9] & !SW[8] &  SW[7] & !SW[6]) ;
+	assign HEX5[3] = (!SW[9] & !SW[8] & !SW[7] &  SW[5]) |  
+					(!SW[9] &  SW[8] & !SW[7] & !SW[5]) |  
+					(       SW[8] &  SW[7] &  SW[5]) |  
+					( SW[9] & !SW[8] &  SW[7] & !SW[5]) ;
 	
-	assign HEX5[4] = (       SW[8]       |  SW[6]) &  
-					(            !SW[7] |  SW[6]) &  
+	assign HEX5[4] = (       SW[8]       |  SW[5]) &  
+					(            !SW[7] |  SW[5]) &  
 					(!SW[9] | !SW[8]            ) &  
-					(!SW[9] | !SW[8] | !SW[7] | !SW[6]) &	
+					(!SW[9] | !SW[8] | !SW[7] | !SW[5]) &	
 					(!SW[9]       | !SW[7]      ) ;
 	
-	assign HEX5[5] = (             SW[7] |  SW[6]) &  
+	assign HEX5[5] = (             SW[7] |  SW[5]) &  
 					( SW[9] | !SW[8] |  SW[7]      ) &  
-					(      !SW[8] |        SW[6]) &
+					(      !SW[8] |        SW[5]) &
 					(!SW[9] |       !SW[7]      ) &		
 					(!SW[9] |  SW[8]            ) ;
 	
 	assign HEX5[6] = (       SW[8] | !SW[7]      ) &  
-					(            !SW[7] |  SW[6]) &  
+					(            !SW[7] |  SW[5]) &  
 					( SW[9] | !SW[8] |  SW[7]      ) &  
-					(!SW[9]             | !SW[6]) &  
+					(!SW[9]             | !SW[5]) &  
 					(!SW[9] |  SW[8]            ) ;
 
    //part 2
@@ -178,7 +178,7 @@ endmodule
 // SW[9] = x3
 // SW[8] = x2
 // SW[7] = x1
-// SW[6] = x0
+// SW[5] = x0
 
 //Part 2
 

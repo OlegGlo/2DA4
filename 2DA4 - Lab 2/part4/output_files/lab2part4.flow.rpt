@@ -1,5 +1,5 @@
 Flow report for lab2part4
-Sun Oct 17 22:05:17 2021
+Mon Oct 18 05:50:39 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -37,24 +37,29 @@ refer to the applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Flow Summary                                                                  ;
-+-----------------------------+-------------------------------------------------+
-; Flow Status                 ; Successful - Sun Oct 17 22:05:17 2021           ;
-; Quartus Prime Version       ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
-; Revision Name               ; lab2part4                                       ;
-; Top-level Entity Name       ; part4                                           ;
-; Family                      ; Cyclone V                                       ;
-; Device                      ; 5CSEMA5F31C6                                    ;
-; Timing Models               ; Final                                           ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                       ;
-; Total registers             ; N/A until Partition Merge                       ;
-; Total pins                  ; N/A until Partition Merge                       ;
-; Total virtual pins          ; N/A until Partition Merge                       ;
-; Total block memory bits     ; N/A until Partition Merge                       ;
-; Total PLLs                  ; N/A until Partition Merge                       ;
-; Total DLLs                  ; N/A until Partition Merge                       ;
-+-----------------------------+-------------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Flow Summary                                                                      ;
++---------------------------------+-------------------------------------------------+
+; Flow Status                     ; Successful - Mon Oct 18 05:50:32 2021           ;
+; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
+; Revision Name                   ; lab2part4                                       ;
+; Top-level Entity Name           ; part4                                           ;
+; Family                          ; Cyclone V                                       ;
+; Device                          ; 5CSEMA5F31C6                                    ;
+; Timing Models                   ; Final                                           ;
+; Logic utilization (in ALMs)     ; 2 / 32,070 ( < 1 % )                            ;
+; Total registers                 ; 5                                               ;
+; Total pins                      ; 11 / 457 ( 2 % )                                ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                           ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                                  ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 0 / 6 ( 0 % )                                   ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
++---------------------------------+-------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -62,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/17/2021 22:05:04 ;
+; Start date & time ; 10/18/2021 05:49:15 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab2part4           ;
 +-------------------+---------------------+
@@ -73,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 24062491136.163453350302268            ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 192123324167383.163456135406116        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; part4       ; Top        ;
@@ -86,29 +91,38 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                          ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:15     ; 1.0                     ; 4773 MB             ; 00:00:33                           ;
-; Total                  ; 00:00:15     ; --                      ; --                  ; 00:00:33                           ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:16     ; 1.0                     ; 4797 MB             ; 00:00:37                           ;
+; Fitter                    ; 00:00:47     ; 1.0                     ; 6284 MB             ; 00:01:06                           ;
+; Assembler                 ; 00:00:11     ; 1.0                     ; 4825 MB             ; 00:00:08                           ;
+; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 5090 MB             ; 00:00:06                           ;
+; Total                     ; 00:01:20     ; --                      ; --                  ; 00:01:57                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                      ;
-+------------------------+------------------+------------+------------+----------------+
-; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+------------------------+------------------+------------+------------+----------------+
-; Analysis & Elaboration ; DESKTOP-4MVHM3J  ; Windows 10 ; 10.0       ; x86_64         ;
-+------------------------+------------------+------------+------------+----------------+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++---------------------------+------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++---------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-4MVHM3J  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; DESKTOP-4MVHM3J  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; DESKTOP-4MVHM3J  ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-4MVHM3J  ; Windows 10 ; 10.0       ; x86_64         ;
++---------------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off lab2part4 -c lab2part4 --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off lab2part4 -c lab2part4
+quartus_fit --read_settings_files=off --write_settings_files=off lab2part4 -c lab2part4
+quartus_asm --read_settings_files=off --write_settings_files=off lab2part4 -c lab2part4
+quartus_sta lab2part4 -c lab2part4
 
 
 
