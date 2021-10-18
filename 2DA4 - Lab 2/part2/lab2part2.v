@@ -70,14 +70,14 @@ module part2(SW, HEX4);
                     ( SW[3] &  SW[1]) |
                     (!SW[3] & SW[2] & !SW[1]);
 
-	assign HEX4[3] = ( SW[3] & !SW[2]) |  
-                    ( SW[3] &  SW[1]) ;
+	assign HEX4[3] = SW[3] & (!SW[2] | SW[1]);
+    //( SW[3] & !SW[2])  | ( SW[3] &  SW[1]) ;
 
 	assign HEX4[4] = 0; //always low - can also do HEX4[5] <= 1'b0;
 
 	assign HEX4[5] = 0;
 
-	assign HEX4[6] = (!SW[3] & !SW[2]) |  
-                    (!SW[3] &  SW[1]) |
-                    (!SW[2] &  SW[1]) ;
+	assign HEX4[6] = (!SW[2] | SW[1]) & (!SW[3] | SW[1]) & (!SW[3] | !SW[2]);
+    //(!SW[3] & !SW[2]) | (!SW[3] &  SW[1]) | (!SW[2] &  SW[1]) ;
+
 endmodule
