@@ -87,20 +87,23 @@ module part3(SW, HEX4, HEX5);
 
     //Part 1
     //input SW[9], SW[8], SW[7], SW[6];
-    input wire [9:6]SW; 
-	//output HEX5[0], HEX5[1], HEX5[2], HEX5[3], HEX5[4], HEX5[5], HEX5[6];
+    //input wire [9:6]SW; 
+	 //output HEX5[0], HEX5[1], HEX5[2], HEX5[3], HEX5[4], HEX5[5], HEX5[6];
     output wire [6:0]HEX5;
 
     //Part 2
     //input SW[4], SW[3], SW[2], SW[1];
-    input wire [4:1]SW;
-	//output HEX4[0], HEX4[1], HEX4[2], HEX4[3], HEX4[4], HEX4[5], HEX4[6];
+    //input wire [4:1]SW;
+	 //output HEX4[0], HEX4[1], HEX4[2], HEX4[3], HEX4[4], HEX4[5], HEX4[6];
     output wire [6:0]HEX4;
+	 
+	 //part 3
+	 input wire [1:9]SW; //Combine the two switch declarations
 
 // ===== Logic ===== //
 
-    //part 1
-    assign HEX5[0] = (!SW[9] & !SW[8] & !SW[7] &  SW[6]) |  
+   //part 1
+   assign HEX5[0] = (!SW[9] & !SW[8] & !SW[7] &  SW[6]) |  
 					(!SW[9] &  SW[8] & !SW[7] & !SW[6]) |  
 					( SW[9] &  SW[8] & !SW[7] &  SW[6]) |  
 					( SW[9] & !SW[8] &  SW[7] &  SW[6]) ;
@@ -137,8 +140,8 @@ module part3(SW, HEX4, HEX5);
 					(!SW[9]             | !SW[6]) &  
 					(!SW[9] |  SW[8]            ) ;
 
-    //part 2
-    assign HEX4[0] = (!SW[2] &  SW[1]) |  
+   //part 2
+   assign HEX4[0] = (!SW[2] &  SW[1]) |  
                     ( SW[3] & !SW[2]) ;
 
 	assign HEX4[1] = (SW[4]) | 
