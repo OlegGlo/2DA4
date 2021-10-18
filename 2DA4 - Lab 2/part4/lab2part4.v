@@ -18,7 +18,7 @@ module part4(SW, KEY, LEDR, HEX5);
 
 	always @(posedge KEY[0]) begin
 		if (KEY[1] == 1'b0)//reset key
-			LEDR[9] <= 1'b1;
+			LEDR[9] <= 1'b0;
 		else
 			LEDR[9] = SW[9];
 			if(SW[9] == 1'b0)
