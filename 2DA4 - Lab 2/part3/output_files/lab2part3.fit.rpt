@@ -1,5 +1,5 @@
 Fitter report for lab2part3
-Sun Oct 17 17:10:40 2021
+Sun Oct 17 22:19:45 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -58,7 +58,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                    ;
 +---------------------------------+-------------------------------------------------+
-; Fitter Status                   ; Successful - Sun Oct 17 17:10:40 2021           ;
+; Fitter Status                   ; Successful - Sun Oct 17 22:19:45 2021           ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                   ; lab2part3                                       ;
 ; Top-level Entity Name           ; part3                                           ;
@@ -2218,8 +2218,8 @@ Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 2/part3/output_files/lab2part3.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 241 warnings
-    Info: Peak virtual memory: 6257 megabytes
-    Info: Processing ended: Sun Oct 17 17:10:41 2021
+    Info: Peak virtual memory: 6261 megabytes
+    Info: Processing ended: Sun Oct 17 22:19:45 2021
     Info: Elapsed time: 00:00:42
     Info: Total CPU time (on all processors): 00:01:04
 
