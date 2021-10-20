@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for lab2part4
-Mon Oct 18 06:29:14 2021
+Wed Oct 20 14:38:58 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -103,7 +103,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.8%      ;
+;     Processor 2            ;   2.5%      ;
 +----------------------------+-------------+
 
 
@@ -157,7 +157,7 @@ No paths to report.
 +--------+--------+---------------------------------+
 ; Clock  ; Slack  ; End Point TNS                   ;
 +--------+--------+---------------------------------+
-; KEY[0] ; -0.394 ; -3.505                          ;
+; KEY[0] ; -0.394 ; -0.697                          ;
 +--------+--------+---------------------------------+
 
 
@@ -202,7 +202,7 @@ No paths to report.
 +--------+--------+--------------------------------+
 ; Clock  ; Slack  ; End Point TNS                  ;
 +--------+--------+--------------------------------+
-; KEY[0] ; -0.394 ; -3.218                         ;
+; KEY[0] ; -0.394 ; -0.689                         ;
 +--------+--------+--------------------------------+
 
 
@@ -241,7 +241,7 @@ No paths to report.
 +--------+--------+---------------------------------+
 ; Clock  ; Slack  ; End Point TNS                   ;
 +--------+--------+---------------------------------+
-; KEY[0] ; -0.345 ; -1.903                          ;
+; KEY[0] ; -0.290 ; -0.290                          ;
 +--------+--------+---------------------------------+
 
 
@@ -280,7 +280,7 @@ No paths to report.
 +--------+--------+--------------------------------+
 ; Clock  ; Slack  ; End Point TNS                  ;
 +--------+--------+--------------------------------+
-; KEY[0] ; -0.323 ; -1.774                         ;
+; KEY[0] ; -0.303 ; -0.303                         ;
 +--------+--------+--------------------------------+
 
 
@@ -297,8 +297,8 @@ No synchronizer chains to report.
 +------------------+-------+------+----------+---------+---------------------+
 ; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; -0.394              ;
 ;  KEY[0]          ; N/A   ; N/A  ; N/A      ; N/A     ; -0.394              ;
-; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; -3.505              ;
-;  KEY[0]          ; N/A   ; N/A  ; N/A      ; N/A     ; -3.505              ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; -0.697              ;
+;  KEY[0]          ; N/A   ; N/A  ; N/A      ; N/A     ; -0.697              ;
 +------------------+-------+------+----------+---------+---------------------+
 
 
@@ -324,8 +324,8 @@ No synchronizer chains to report.
 ; Pin    ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
 +--------+--------------+-----------------+-----------------+
 ; SW[9]  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; KEY[1] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; KEY[0] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; KEY[1] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 +--------+--------------+-----------------+-----------------+
 
 
@@ -419,7 +419,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 2     ; 2    ;
-; Unconstrained Input Port Paths  ; 6     ; 6    ;
+; Unconstrained Input Port Paths  ; 2     ; 2    ;
 ; Unconstrained Output Ports      ; 5     ; 5    ;
 ; Unconstrained Output Port Paths ; 5     ; 5    ;
 +---------------------------------+-------+------+
@@ -486,7 +486,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Mon Oct 18 06:29:08 2021
+    Info: Processing started: Wed Oct 20 14:38:50 2021
 Info: Command: quartus_sta lab2part4 -c lab2part4
 Info: qsta_default_script.tcl version: #3
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
@@ -1083,7 +1083,7 @@ Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case minimum pulse width slack is -0.394
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.394              -3.505 KEY[0] 
+    Info (332119):    -0.394              -0.697 KEY[0] 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
@@ -1098,7 +1098,7 @@ Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case minimum pulse width slack is -0.394
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.394              -3.218 KEY[0] 
+    Info (332119):    -0.394              -0.689 KEY[0] 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
@@ -1109,10 +1109,10 @@ Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case minimum pulse width slack is -0.345
+Info (332146): Worst-case minimum pulse width slack is -0.290
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.345              -1.903 KEY[0] 
+    Info (332119):    -0.290              -0.290 KEY[0] 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332140): No Setup paths to report
@@ -1121,16 +1121,16 @@ Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case minimum pulse width slack is -0.323
+Info (332146): Worst-case minimum pulse width slack is -0.303
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.323              -1.774 KEY[0] 
+    Info (332119):    -0.303              -0.303 KEY[0] 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 578 warnings
-    Info: Peak virtual memory: 5085 megabytes
-    Info: Processing ended: Mon Oct 18 06:29:13 2021
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Peak virtual memory: 5109 megabytes
+    Info: Processing ended: Wed Oct 20 14:38:58 2021
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:08
 
 
