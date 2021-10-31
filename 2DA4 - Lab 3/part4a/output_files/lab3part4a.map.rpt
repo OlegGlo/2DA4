@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab3part4a
-Sun Oct 31 15:07:48 2021
+Sun Oct 31 15:37:33 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -13,11 +13,10 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -43,7 +42,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Oct 31 15:07:48 2021           ;
+; Analysis & Synthesis Status     ; Successful - Sun Oct 31 15:37:33 2021           ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                   ; lab3part4a                                      ;
 ; Top-level Entity Name           ; seg7                                            ;
@@ -175,31 +174,31 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------+---------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                 ;
-+---------------------------------------------+---------------+
-; Resource                                    ; Usage         ;
-+---------------------------------------------+---------------+
-; Estimate of Logic utilization (ALMs needed) ; 1             ;
-;                                             ;               ;
-; Combinational ALUT usage for logic          ; 2             ;
-;     -- 7 input functions                    ; 0             ;
-;     -- 6 input functions                    ; 0             ;
-;     -- 5 input functions                    ; 0             ;
-;     -- 4 input functions                    ; 0             ;
-;     -- <=3 input functions                  ; 2             ;
-;                                             ;               ;
-; Dedicated logic registers                   ; 0             ;
-;                                             ;               ;
-; I/O pins                                    ; 11            ;
-;                                             ;               ;
-; Total DSP Blocks                            ; 0             ;
-;                                             ;               ;
-; Maximum fan-out node                        ; leds[6]$latch ;
-; Maximum fan-out                             ; 5             ;
-; Total fan-out                               ; 21            ;
-; Average fan-out                             ; 0.88          ;
-+---------------------------------------------+---------------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 4           ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 7           ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 0           ;
+;     -- 5 input functions                    ; 0           ;
+;     -- 4 input functions                    ; 7           ;
+;     -- <=3 input functions                  ; 0           ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 11          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; SW[0]~input ;
+; Maximum fan-out                             ; 7           ;
+; Total fan-out                               ; 46          ;
+; Average fan-out                             ; 1.59        ;
++---------------------------------------------+-------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -207,23 +206,9 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |seg7                      ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 11   ; 0            ; |seg7               ; seg7        ; work         ;
+; |seg7                      ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 11   ; 0            ; |seg7               ; seg7        ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+---------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                               ;
-+----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
-+----------------------------------------------------+---------------------+------------------------+
-; leds[6]$latch                                      ; WideNor0            ; yes                    ;
-; leds[5]$latch                                      ; WideNor0            ; yes                    ;
-; leds[4]$latch                                      ; WideNor0            ; yes                    ;
-; leds[1]$latch                                      ; WideNor0            ; yes                    ;
-; Number of user-specified and inferred latches = 4  ;                     ;                        ;
-+----------------------------------------------------+---------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -246,14 +231,14 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 4                           ;
-;     normal            ; 4                           ;
-;         0 data inputs ; 2                           ;
-;         3 data inputs ; 2                           ;
+; arriav_lcell_comb     ; 14                          ;
+;     normal            ; 14                          ;
+;         1 data inputs ; 7                           ;
+;         4 data inputs ; 7                           ;
 ; boundary_port         ; 11                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.33                        ;
+; Average LUT depth     ; 2.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -272,32 +257,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Sun Oct 31 15:07:31 2021
+    Info: Processing started: Sun Oct 31 15:37:16 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab3part4a -c lab3part4a
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file lab3part4a.v
     Info (12023): Found entity 1: seg7 File: C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 3/part4a/lab3part4a.v Line: 1
 Info (12127): Elaborating entity "seg7" for the top level hierarchy
-Warning (10270): Verilog HDL Case Statement warning at lab3part4a.v(7): incomplete case statement has no default case item File: C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 3/part4a/lab3part4a.v Line: 7
-Warning (10240): Verilog HDL Always Construct warning at lab3part4a.v(6): inferring latch(es) for variable "leds", which holds its previous value in one or more paths through the always construct File: C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 3/part4a/lab3part4a.v Line: 6
-Info (10041): Inferred latch for "leds[7]" at lab3part4a.v(6) File: C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 3/part4a/lab3part4a.v Line: 6
-Info (10041): Inferred latch for "leds[6]" at lab3part4a.v(6) File: C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 3/part4a/lab3part4a.v Line: 6
-Info (10041): Inferred latch for "leds[5]" at lab3part4a.v(6) File: C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 3/part4a/lab3part4a.v Line: 6
-Info (10041): Inferred latch for "leds[4]" at lab3part4a.v(6) File: C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 3/part4a/lab3part4a.v Line: 6
-Info (10041): Inferred latch for "leds[3]" at lab3part4a.v(6) File: C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 3/part4a/lab3part4a.v Line: 6
-Info (10041): Inferred latch for "leds[2]" at lab3part4a.v(6) File: C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 3/part4a/lab3part4a.v Line: 6
-Info (10041): Inferred latch for "leds[1]" at lab3part4a.v(6) File: C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 3/part4a/lab3part4a.v Line: 6
-Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
-    Info (13026): Duplicate LATCH primitive "leds[1]$latch" merged with LATCH primitive "leds[6]$latch" File: C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 3/part4a/lab3part4a.v Line: 6
-    Info (13026): Duplicate LATCH primitive "leds[4]$latch" merged with LATCH primitive "leds[6]$latch" File: C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 3/part4a/lab3part4a.v Line: 6
-    Info (13026): Duplicate LATCH primitive "leds[5]$latch" merged with LATCH primitive "leds[6]$latch" File: C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 3/part4a/lab3part4a.v Line: 6
-Warning (13012): Latch leds[6]$latch has unsafe behavior File: C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 3/part4a/lab3part4a.v Line: 6
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal hex[1] File: C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 3/part4a/lab3part4a.v Line: 2
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "leds[7]" is stuck at GND File: C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 3/part4a/lab3part4a.v Line: 6
-    Warning (13410): Pin "leds[3]" is stuck at VCC File: C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 3/part4a/lab3part4a.v Line: 6
-    Warning (13410): Pin "leds[2]" is stuck at VCC File: C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 3/part4a/lab3part4a.v Line: 6
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[0] -entity DE1_SoC was ignored
@@ -873,14 +839,14 @@ Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_P -entity DE1_SoC was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 13 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 18 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 2 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 581 warnings
-    Info: Peak virtual memory: 4811 megabytes
-    Info: Processing ended: Sun Oct 31 15:07:48 2021
+    Info (21061): Implemented 7 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 573 warnings
+    Info: Peak virtual memory: 4806 megabytes
+    Info: Processing ended: Sun Oct 31 15:37:33 2021
     Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:35
+    Info: Total CPU time (on all processors): 00:00:38
 
 

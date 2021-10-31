@@ -16,7 +16,7 @@ module part4(SW, KEY, LEDR, HEX5);
 	
 // == Logic ==
 	
-	 always @(posedge KEY[0], negedge KEY[1])
+	always @(posedge KEY[0], negedge KEY[1])
     begin
         if (~KEY[1])//reset key
             LEDR[9] <= 1'b0;

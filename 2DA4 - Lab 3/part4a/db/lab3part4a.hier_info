@@ -1,18 +1,14 @@
 |seg7
-hex[0] => Equal0.IN63
-hex[0] => Equal1.IN63
-hex[1] => Equal0.IN62
-hex[1] => Equal1.IN62
-hex[2] => Equal0.IN61
-hex[2] => Equal1.IN61
-hex[3] => Equal0.IN60
-hex[3] => Equal1.IN60
-leds[7] <= <GND>
-leds[6] <= leds[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
-leds[5] <= leds[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-leds[4] <= leds[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-leds[3] <= <VCC>
-leds[2] <= <VCC>
-leds[1] <= leds[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[0] <= HEX5.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX5[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+SW[0] => Decoder0.IN3
+SW[1] => Decoder0.IN2
+SW[2] => Decoder0.IN1
+SW[3] => Decoder0.IN0
 
 
