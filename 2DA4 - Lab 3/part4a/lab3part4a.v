@@ -1,6 +1,11 @@
 
 module seg7(HEX5,SW);//hex, leds
 
+	//Short description:
+	/*
+	a driver for the 7-bit display, takes in a 4-bit input and outputs 16 different variations on the display
+	*/
+
 	//input [3:0] hex; this is the actual input, can change to wire  == keep as switches 0 to 3 for now
 	input [3:0] SW;
 	

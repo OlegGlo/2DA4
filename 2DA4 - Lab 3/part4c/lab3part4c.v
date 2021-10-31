@@ -1,10 +1,13 @@
 
 module reg3(SW, KEY, LEDR); //D, Clock, Resetn, Q, s0, s1, s2, s3, s4, s5, s6
 
-	//Short describtion:
+	//Short description:
 	/*
-	
+	similar to a normal D-FF but now accepts 3 bit in parallel
 
+	key 0 is the clock, key 1 acts as a reset setting all output to low
+
+	switch is the signal at the inputs, which is only accepted with the clock edge
 	*/
 
 	// === Input and Output

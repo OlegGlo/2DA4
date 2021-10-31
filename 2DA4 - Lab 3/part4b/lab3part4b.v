@@ -1,10 +1,13 @@
 
 module flipflop(SW, KEY, LEDR);
 
-    //Short describtion:
+    //Short description:
 	/*
+	input 1 bit and store it in the D-FF
 	
+	switch position is input and LED shows the output state
 
+	the key is used as a clock
 	*/
 
     // == Input and Output ==
