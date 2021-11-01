@@ -21,17 +21,17 @@ module seg7(HEX5,SW);//hex, leds
 			2: HEX5 = 7'b0100100; //2
 			3: HEX5 = 7'b0110000; //3
 			4: HEX5 = 7'b0011001; //4
-			5: HEX5 = 7'b0100100; //why are they mirrored?
-			6: HEX5 = 7'b0100000; //broke as the rest are
-			7: HEX5 = 7'b0001111; //7
+			5: HEX5 = 7'b0010010; //5
+			6: HEX5 = 7'b0000010; //6
+			7: HEX5 = 7'b1111000; //7
 			8: HEX5 = 7'b0000000; //8
-			9: HEX5 = 7'b0000100; //9
-			10: HEX5 = 7'b0001000; //A
-			11: HEX5 = 7'b0000100; //etc
-			12: HEX5 = 7'b0001000;
-			13: HEX5 = 7'b0010000;
-			14: HEX5 = 7'b0100000;
-			15: HEX5 = 7'b1000000; //fix these with actual numbers
+			9: HEX5 = 7'b0010000; //9
+			10: HEX5 = 7'b0001000; //A  broke as the rest are
+			11: HEX5 = 7'b0000011; //b  etc
+			12: HEX5 = 7'b0100111; //c
+			13: HEX5 = 7'b0100001; //d
+			14: HEX5 = 7'b0000110; //e
+			15: HEX5 = 7'b0001110; //F  fix these with actual numbers
 			//etc
 		endcase
 endmodule

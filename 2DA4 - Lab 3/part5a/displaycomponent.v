@@ -20,11 +20,11 @@ module displaydriver(sw, hex);
 			2: hex = 7'b0100100; //2
 			3: hex = 7'b0110000; //3
 			4: hex = 7'b0011001; //4
-			5: hex = 7'b0100100; //why are they mirrored?
-			6: hex = 7'b0100000; //broken as the rest are
-			7: hex = 7'b0001111; //7
+			5: hex = 7'b0010010; //5
+			6: hex = 7'b0000010; //6
+			7: hex = 7'b1111000; //7
 			8: hex = 7'b0000000; //8
-			9: hex = 7'b0000100; //9
+			9: hex = 7'b0010000; //9
 			10: hex = 7'b0001000; //A
 			11: hex = 7'b0000100; //etc
 			12: hex = 7'b0001000;
