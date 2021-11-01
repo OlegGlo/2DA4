@@ -1,5 +1,5 @@
 
-module simplealu(SW, LEDR, KEY);
+module simplealu(SW, LEDR, KEY, clck);
 
 	// === Input / Output ===
 	
@@ -12,10 +12,12 @@ module simplealu(SW, LEDR, KEY);
 	// === Net / Reg ===
 	
 	reg [9:6] LEDR;
+
+	assign clck = KEY[0];
 	
 	// === Logic ===
 	
-	always @(posedge KEY[0])
+	always @(posedge clck)
 	begin
 		LEDR <= SW[9:7] + SW[6:4]; 
 	end
