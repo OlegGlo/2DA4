@@ -1,0 +1,17 @@
+|simplealu
+SW[4] => Add0.IN6
+SW[5] => Add0.IN5
+SW[6] => Add0.IN4
+SW[7] => Add0.IN3
+SW[8] => Add0.IN2
+SW[9] => Add0.IN1
+LEDR[6] <= LEDR[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= LEDR[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[8] <= LEDR[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[9] <= LEDR[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+KEY[0] => LEDR[6]~reg0.CLK
+KEY[0] => LEDR[7]~reg0.CLK
+KEY[0] => LEDR[8]~reg0.CLK
+KEY[0] => LEDR[9]~reg0.CLK
+
+
