@@ -27,6 +27,8 @@ module simplealu(switch1, switch2, light, display); //KEY, LEDR
 	
 	
 	// === Logic ===
+
+	
 	
 	adder U1(
 		.a (switch1),
@@ -34,6 +36,12 @@ module simplealu(switch1, switch2, light, display); //KEY, LEDR
 		.sum (x1),
 		.led (light)
 		);
+
+	//register()
+
+
+
+	
 
 	//store input in register 1
 
