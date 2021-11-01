@@ -34,6 +34,14 @@ module simplealu(switch1, switch2, light, display); //KEY, LEDR
 		.sum (x1),
 		.led (light)
 		);
+
+	//store input in register 1
+
+	//add register 1 and register 2
+
+	//store input in register 2
+
+	//keep storing display
 	
 	displaydriver U2(
 		.sw (x1),
