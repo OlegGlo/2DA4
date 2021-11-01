@@ -4,47 +4,71 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "LEDR[6]",
+					"name" : "light[0]",
 					"strict" : false
 				},
 				{
-					"name" : "LEDR[7]",
+					"name" : "light[1]",
 					"strict" : false
 				},
 				{
-					"name" : "LEDR[8]",
+					"name" : "light[2]",
 					"strict" : false
 				},
 				{
-					"name" : "LEDR[9]",
+					"name" : "light[3]",
 					"strict" : false
 				},
 				{
-					"name" : "SW[4]",
+					"name" : "display[0]",
 					"strict" : false
 				},
 				{
-					"name" : "SW[7]",
+					"name" : "display[1]",
 					"strict" : false
 				},
 				{
-					"name" : "KEY[0]",
+					"name" : "display[2]",
 					"strict" : false
 				},
 				{
-					"name" : "SW[5]",
+					"name" : "display[3]",
 					"strict" : false
 				},
 				{
-					"name" : "SW[8]",
+					"name" : "display[4]",
 					"strict" : false
 				},
 				{
-					"name" : "SW[6]",
+					"name" : "display[5]",
 					"strict" : false
 				},
 				{
-					"name" : "SW[9]",
+					"name" : "display[6]",
+					"strict" : false
+				},
+				{
+					"name" : "switch1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "switch2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "switch1[8]",
+					"strict" : false
+				},
+				{
+					"name" : "switch2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "switch1[9]",
+					"strict" : false
+				},
+				{
+					"name" : "switch2[6]",
 					"strict" : false
 				}
 			]

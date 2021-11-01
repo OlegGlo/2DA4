@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Sun Oct 31 18:55:46 2021
+Analysis & Synthesis Status : Successful - Sun Oct 31 23:23:49 2021
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 Revision Name : lab3part5a
 Top-level Entity Name : simplealu
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 4
-Total pins : 11
+Total registers : 0
+Total pins : 17
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

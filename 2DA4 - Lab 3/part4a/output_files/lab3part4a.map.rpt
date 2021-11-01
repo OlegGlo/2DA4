@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab3part4a
-Sun Oct 31 15:37:33 2021
+Sun Oct 31 22:22:49 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Oct 31 15:37:33 2021           ;
+; Analysis & Synthesis Status     ; Successful - Sun Oct 31 22:22:49 2021           ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                   ; lab3part4a                                      ;
 ; Top-level Entity Name           ; seg7                                            ;
@@ -231,14 +231,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 14                          ;
-;     normal            ; 14                          ;
-;         1 data inputs ; 7                           ;
+; arriav_lcell_comb     ; 8                           ;
+;     normal            ; 8                           ;
+;         1 data inputs ; 1                           ;
 ;         4 data inputs ; 7                           ;
 ; boundary_port         ; 11                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 2.00                        ;
+; Average LUT depth     ; 1.50                        ;
 +-----------------------+-----------------------------+
 
 
@@ -257,12 +257,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Sun Oct 31 15:37:16 2021
+    Info: Processing started: Sun Oct 31 22:22:33 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab3part4a -c lab3part4a
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file lab3part4a.v
-    Info (12023): Found entity 1: seg7 File: C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 3/part4a/lab3part4a.v Line: 1
+    Info (12023): Found entity 1: seg7 File: C:/Users/Oleg/Documents/2DA4/2DA4 - Lab 3/part4a/lab3part4a.v Line: 2
 Info (12127): Elaborating entity "seg7" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
@@ -844,9 +844,9 @@ Info (21057): Implemented 18 device resources after synthesis - the final resour
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 7 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 573 warnings
-    Info: Peak virtual memory: 4806 megabytes
-    Info: Processing ended: Sun Oct 31 15:37:33 2021
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:38
+    Info: Peak virtual memory: 4807 megabytes
+    Info: Processing ended: Sun Oct 31 22:22:49 2021
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:36
 
 

@@ -1,17 +1,57 @@
 |simplealu
-SW[4] => Add0.IN6
-SW[5] => Add0.IN5
-SW[6] => Add0.IN4
-SW[7] => Add0.IN3
-SW[8] => Add0.IN2
-SW[9] => Add0.IN1
-LEDR[6] <= LEDR[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[7] <= LEDR[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[8] <= LEDR[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[9] <= LEDR[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-KEY[0] => LEDR[6]~reg0.CLK
-KEY[0] => LEDR[7]~reg0.CLK
-KEY[0] => LEDR[8]~reg0.CLK
-KEY[0] => LEDR[9]~reg0.CLK
+switch1[7] => switch1[7].IN1
+switch1[8] => switch1[8].IN1
+switch1[9] => switch1[9].IN1
+switch2[4] => switch2[4].IN1
+switch2[5] => switch2[5].IN1
+switch2[6] => switch2[6].IN1
+light[0] << adder:U1.led
+light[1] << adder:U1.led
+light[2] << adder:U1.led
+light[3] << adder:U1.led
+display[0] << displaydriver:U2.hex
+display[1] << displaydriver:U2.hex
+display[2] << displaydriver:U2.hex
+display[3] << displaydriver:U2.hex
+display[4] << displaydriver:U2.hex
+display[5] << displaydriver:U2.hex
+display[6] << displaydriver:U2.hex
+
+
+|simplealu|adder:U1
+a[0] => Add0.IN3
+a[0] => Add1.IN3
+a[1] => Add0.IN2
+a[1] => Add1.IN2
+a[2] => Add0.IN1
+a[2] => Add1.IN1
+b[0] => Add0.IN6
+b[0] => Add1.IN6
+b[1] => Add0.IN5
+b[1] => Add1.IN5
+b[2] => Add0.IN4
+b[2] => Add1.IN4
+sum[0] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+sum[1] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+sum[2] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+sum[3] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+led[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|simplealu|displaydriver:U2
+sw[0] => Decoder0.IN3
+sw[1] => Decoder0.IN2
+sw[2] => Decoder0.IN1
+sw[3] => Decoder0.IN0
+hex[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+hex[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
