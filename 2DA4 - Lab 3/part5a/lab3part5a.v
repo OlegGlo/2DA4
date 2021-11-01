@@ -47,6 +47,10 @@ module simplealu(switch1, switch2, light, display); //KEY, LEDR
 		.sw (x1),
 		.hex (display)
 		);
+
+	//register
+
+	//no reset register
 	
 	
 endmodule
